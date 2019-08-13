@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
 		pulsos += muestras;
 		contador ++;
 	}
-	printf("El promodio entre %f y %u es: %f\n",pulsos,contador,pulsos/contador);
+	printf("El promodio entre %f y %u es: %f\n",pulsos,contador,pulsos/contador*1000000);
 	fclose(binfile);
 	return 0;
 }
